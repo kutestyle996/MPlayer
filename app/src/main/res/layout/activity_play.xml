@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image_background"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_200"
+        android:layout_marginTop="@dimen/dp_50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_music" />
+
+    <ImageButton
+        android:id="@+id/button_play"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginTop="132dp"
+        android:src="@drawable/icon_play"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_background" />
+
+    <ImageButton
+        android:id="@+id/button_previous"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:src="@drawable/icon_previous"
+        app:layout_constraintEnd_toStartOf="@+id/button_play"
+        app:layout_constraintTop_toBottomOf="@+id/image_background" />
+
+    <ImageButton
+        android:id="@+id/button_next"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="132dp"
+        app:layout_constraintStart_toEndOf="@+id/button_play"
+        app:layout_constraintTop_toBottomOf="@+id/image_background"
+        app:srcCompat="@drawable/icon_next" />
+
+    <SeekBar
+        android:id="@+id/seekBar_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_background" />
+
+    <TextView
+        android:id="@+id/text_StartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seekBar_time" />
+
+    <TextView
+        android:id="@+id/text_totalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seekBar_time" />
+
+    <TextView
+        android:id="@+id/text_songName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_background" />
+</android.support.constraint.ConstraintLayout>

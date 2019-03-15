@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">MPlayer</string>
+    <string name="app_name">MusicPlayer</string>
+    <string name="text_permission_denied">Permission denied to read your External storage</string>
 </resources>
